@@ -9,7 +9,11 @@ import { ProfilComponent } from './component/profil/profil.component';
 const routes: Routes = [
   { path: '', redirectTo: '/accueil', pathMatch: 'full' },
   { path: 'accueil', component: AccueilComponent },
-  { path: 'experience', component: ExperienceComponent },
+  { path: 'experience', loadChildren: () => import('./component/experience/Experience.module').then(m => m.ExperienceModule)},
+  {
+    path: '**',
+    redirectTo: '/accueil'
+  },
   { path: 'contact', component: ContactComponent },
   { path: 'profil', component: ProfilComponent },
 ];

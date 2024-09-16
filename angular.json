@@ -32,15 +32,19 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/aos/dist/aos.js"
+            ], 
+            "allowedCommonJsDependencies": [
+              "aos"
             ]
+
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "708.46kB",
+                  "maximumError": "750kb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -48,7 +52,19 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              
+              
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              }
+
+
             },
             "development": {
               "optimization": false,
