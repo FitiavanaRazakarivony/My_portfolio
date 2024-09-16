@@ -8,7 +8,7 @@ import { faHome, faUser, faBriefcase, faEnvelope, faCode } from '@fortawesome/fr
   styleUrl: './contact.component.css',
 })
 
-export class ContactComponent  {
+export class ContactComponent implements OnInit  {
 
   faHome = faHome;
   faUser = faUser;

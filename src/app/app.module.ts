@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ExperienceComponent } from "./component/experience/experience.component";
 import { HttpClientModule } from '@angular/common/http';
 import { AccueilComponent } from './component/accueil/accueil.component';
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProfilComponent } from './component/profil/profil.component';
+import { SharedModule } from './shared.module';
+
 
 @NgModule({
   imports: [
@@ -17,6 +17,7 @@ import { ProfilComponent } from './component/profil/profil.component';
     AppRoutingModule,
     HttpClientModule,
     CommonModule,
+    SharedModule,
     BrowserModule,
   ],
   declarations: [
@@ -24,6 +25,7 @@ import { ProfilComponent } from './component/profil/profil.component';
     ContactComponent,
     AccueilComponent,
     ProfilComponent,
+    AppComponent
     
   ],
   providers: [],
@@ -31,3 +33,4 @@ import { ProfilComponent } from './component/profil/profil.component';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
+

@@ -8,7 +8,7 @@ import { faEnvelope, faPhone, faMapMarkerAlt, faUser } from '@fortawesome/free-s
   styleUrl: './profil.component.css'
 })
 
-export class ProfilComponent  {
+export class ProfilComponent implements OnInit {
 
   faEnvelope = faEnvelope;
   faPhone = faPhone;

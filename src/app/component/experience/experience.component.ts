@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { faCode, faPalette, faDatabase, faTasks } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

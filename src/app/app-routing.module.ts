@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './component/contact/contact.component';
-import { ExperienceComponent } from './component/experience/experience.component';
 // import { AjoutExpComponent} from './admin/component/ajout/experience/ajoutExp.component';
 import { AccueilComponent } from './component/accueil/accueil.component'
 import { ProfilComponent } from './component/profil/profil.component';

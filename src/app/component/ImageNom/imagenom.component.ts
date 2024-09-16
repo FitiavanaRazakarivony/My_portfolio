@@ -7,7 +7,7 @@ import AOS from 'aos';
   styleUrl: './imagenom.component.css',
 })
 
-export class ImageNomComponent  {
+export class ImageNomComponent  implements OnInit{
 
   ngOnInit(): void {
     AOS.init({disable:'mobile'});

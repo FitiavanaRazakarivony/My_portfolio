@@ -10,12 +10,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
-  declarations: [ExperienceComponent, IconsComponent,NavbarComponent,ImageNomComponent],
+  declarations: [ExperienceComponent, IconsComponent,NavbarComponent, ImageNomComponent],
   imports: [
     CommonModule,
     ExperienceRoutingModule,
-    FontAwesomeModule
-
+    FontAwesomeModule,
   ],
 
 })
