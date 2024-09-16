@@ -1,0 +1,45 @@
+.profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.nom {
+  color: #27f90a;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.btn-primary {
+  background-color: #27f90a;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #27f90a;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item fa-icon {
+  margin-right: 10px;
+  color: #27f90a;
+}
+.profil{
+  display: flex;
+}

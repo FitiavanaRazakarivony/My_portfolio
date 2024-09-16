@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    color: rgb(55, 53, 53);
+    background-color: rgb(237 236 237);
+    font-size: 20px;
+
+}
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+
+}
+h1,h3,p,ol{
+    color: #353434;
+}
+ul{
+  list-style: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+  }
+  
+  .navbar {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 15px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fffbfb;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #007bff;
+  }
+  
+  .content {
+    /* flex-grow: 1; Prend tout l'espace restant pour le contenu */
+    /* padding: 40px; */
+    background-color: #ffffff; /* Couleur de fond pour le contenu */
+  }
+  
