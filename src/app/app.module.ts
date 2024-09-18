@@ -18,15 +18,12 @@ import { SharedModule } from './shared.module';
     HttpClientModule,
     CommonModule,
     SharedModule,
-    BrowserModule,
   ],
   declarations: [
     AppComponent,
     ContactComponent,
     AccueilComponent,
-    ProfilComponent,
-    AppComponent
-    
+    ProfilComponent,    
   ],
   providers: [],
   bootstrap: [AppComponent],

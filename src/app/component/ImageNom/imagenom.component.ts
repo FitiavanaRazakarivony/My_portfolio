@@ -14,4 +14,3 @@ export class ImageNomComponent  implements OnInit{
     AOS.refresh();
   }
 }
-
