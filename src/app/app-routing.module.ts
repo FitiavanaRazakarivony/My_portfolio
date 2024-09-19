@@ -6,7 +6,7 @@ import { AccueilComponent } from './component/accueil/accueil.component'
 import { ProfilComponent } from './component/profil/profil.component';
 
 const routes: Routes = [
-  { path: 'experience', loadChildren: () => import('./component/experience/Experience.module').then(m => m.ExperienceModule)},
+  { path: 'experience', loadChildren: () => import('./component/experience/experience.module').then(m => m.ExperienceModule)},
   { path: 'contact', component: ContactComponent },
   { path: 'profil', component: ProfilComponent },
   { path: 'accueil', component: AccueilComponent },

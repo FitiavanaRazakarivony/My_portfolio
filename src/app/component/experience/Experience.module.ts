@@ -1,23 +1,16 @@
-// src/app/Experience/Experience.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 import { ExperienceComponent } from './experience.component';
-import { ExperienceRoutingModule } from './experience-routing.module';
-import { ImageNomComponent } from '../ImageNom/imagenom.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SharedModule } from '../../shared.module';
 
+const routes: Routes = [
+  { path: '', component: ExperienceComponent }
+];
 
 @NgModule({
-  declarations: [
-    ExperienceComponent,
-    ],
   imports: [
     CommonModule,
-    ExperienceRoutingModule,
-    FontAwesomeModule,
-    SharedModule,
-  ],
-
+    RouterModule.forChild(routes),
+  ]
 })
 export class ExperienceModule { }
