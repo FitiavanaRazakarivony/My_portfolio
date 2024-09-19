@@ -1,11 +1,3 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [
-    {
-        path:'',
-        redirectTo:'accueil',
-    },{
-        path:'accueil'
-    }
-
-];
+export const routes: Routes = [];

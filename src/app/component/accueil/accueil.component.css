@@ -23,7 +23,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border-radius: 17px;
 }
 
 button:hover {
@@ -39,3 +38,6 @@ button:hover {
   margin: auto;
 }
 
+.visibility{
+  color: beige;
+}

@@ -6,8 +6,8 @@
     </div>
   
     <div class="content_accueil">
-      <h1>HI THERE!</h1>
-      <h1>I'M <span class="nom">Fitiavana</span></h1>
+      <h1 class="permanent-marker-regular">Bonjour !</h1>
+      <h1 class="permanent-marker-regular">Je suis <span class="nom permanent-marker-regular">Fitiavana</span></h1>
       <article class="mt-4">
         <p>
           Déveleppeur passionné par la technologie et l'innovation, spécialisé
@@ -17,10 +17,10 @@
         </p>
       </article>
     
-      <div class="button-container mt-4">
-        <fa-icon [icon]="faUser"></fa-icon> 
-
-        <button type="button"> Voir mon profil <i class="fa-user"></i></button>
+      <div class="button-container mt-5">
+        <button type="button">
+          <a [routerLink]="['/profil']" class="nav-link">Voir mon profil </a>
+        </button>
       </div>
     </div>
   </div>

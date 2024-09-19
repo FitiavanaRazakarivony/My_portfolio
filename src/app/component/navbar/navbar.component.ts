@@ -1,25 +1,9 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, HostListener } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Component, HostListener } from '@angular/core';
 import { faHome, faUser, faBriefcase, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
-import { AppRoutingModule } from '../../app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
-  standalone:true,
-  imports: [
-    FontAwesomeModule,
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    CommonModule,
-    RouterModule
-    
-  ],
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
   navbarStyles: { [key: string]: string } = {};

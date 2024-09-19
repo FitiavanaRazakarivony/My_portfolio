@@ -1,23 +1,25 @@
 // src/app/Experience/Experience.module.ts
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ExperienceComponent } from './experience.component';
-import { ExperienceRoutingModule } from './experience-routing.module';
 import { ImageNomComponent } from '../ImageNom/imagenom.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../../shared.module';
+import { ContactComponent } from './contact.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    ExperienceComponent,
-    ],
+    ContactComponent,
+    ImageNomComponent
+  ],
   imports: [
     CommonModule,
-    ExperienceRoutingModule,
     FontAwesomeModule,
     SharedModule,
   ],
-
+  exports: [
+    ContactComponent // Optionally export if needed in other modules
+  ],
 })
-export class ExperienceModule { }
+export class ContactModule { }

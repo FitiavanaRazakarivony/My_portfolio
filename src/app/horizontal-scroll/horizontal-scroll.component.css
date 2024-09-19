@@ -1,0 +1,76 @@
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+  body {
+    overflow-y: visible;
+    position: relative;
+    height: unset;
+  }
+  html, body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  .container {
+    width: 400%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+  }
+  
+  .lastContainer {
+    display: flex;
+    height: 100vh;
+    background: yellow;
+  }
+  
+  .panel {
+    flex: 0 0 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    scroll-snap-align: center; /* Snap to center */
+  }
+  
+  /* Add any additional styling for your sections */
+  .red {
+    background-color: red;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .scroll-down {
+    /* Style for scroll-down indicator */
+  }
+  
+  .arrow {
+    /* Style for arrow */
+  }
+  

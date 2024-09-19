@@ -4,8 +4,7 @@ import AOS from 'aos';
 @Component({
   selector: 'app-imagenom',
   templateUrl: './imagenom.component.html',
-  styleUrls: ['./imagenom.component.css'],  
-  standalone:true
+  styleUrl: './imagenom.component.css',
 })
 
 export class ImageNomComponent  implements OnInit{
