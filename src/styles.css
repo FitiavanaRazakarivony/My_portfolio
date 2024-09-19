@@ -14,9 +14,6 @@ body{
   'opsz' 50;
   color:#75FB4C
 }
-/* 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
 
 .lexend-tera {
   font-family: "Lexend Tera", sans-serif;
@@ -24,8 +21,6 @@ body{
   font-weight: 500;
   font-style: normal;
 }
-
-/* // <uniquifier>: Use a unique and descriptive class name */
 
 .honk {
   font-family: "Honk", system-ui;
