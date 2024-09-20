@@ -14,6 +14,12 @@ export class ExperienceComponent {
   faDatabase = faDatabase
   faTasks = faTasks
 
+  openGithub_stage1(): void {
+    window.open('https://github.com/FitiavanaRazakarivony/Creation_du_site_Web_Value_IT', '_blank');
+  }
+  openGithub_stage2(): void {
+    window.open('https://github.com/FitiavanaRazakarivony/Gestion-stock-multi-tache', '_blank');
+  }
   constructor(private _formBuilder: FormBuilder) {}
   firstFormGroup: FormGroup = this._formBuilder.group({firstCtrl: ['']});
   secondFormGroup: FormGroup = this._formBuilder.group({secondCtrl: ['']});

@@ -6,7 +6,9 @@
   border-radius: 15px;
 }
 
-
+.apropos{
+  font-size: 1rem;
+}
 .button-container {
   display: flex;
   justify-content: flex-end; /* Aligne le bouton à droite */
@@ -34,7 +36,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 60vw;
+  width: 69vw;
   margin: auto;
 }
 

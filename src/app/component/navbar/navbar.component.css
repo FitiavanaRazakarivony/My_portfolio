@@ -20,3 +20,9 @@ nav {
   font-size: 18px; 
   color: #101010; 
 }
+
+.active {
+  color: #42ec09 !important;
+  border: 1px solid #42ec09;
+  
+}

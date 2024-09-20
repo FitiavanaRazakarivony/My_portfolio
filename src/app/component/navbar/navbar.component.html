@@ -1,24 +1,25 @@
 <nav class="navbar">
   <ul class="menu">
-    <li>
-      <a [routerLink]="['/']" class="nav-link">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+      <a  [routerLink]="['/']" class="nav-link">
         <fa-icon [icon]="faHome"></fa-icon> 
       </a>
     </li>
-    <li>
-      <a [routerLink]="['/profil']" class="nav-link">
+    <li routerLinkActive="active">
+      <a   [routerLink]="['/profil']" class="nav-link">
         <fa-icon [icon]="faUser"></fa-icon> 
       </a>
     </li>
-    <li>
-      <a [routerLink]="['/experience']" class="nav-link">
+    <li routerLinkActive="active">
+      <a   [routerLink]="['/experience']" class="nav-link">
         <fa-icon [icon]="faCode"></fa-icon> 
       </a>
     </li>
-    <li>
-      <a [routerLink]="['/contact']" class="nav-link">
+    <li routerLinkActive="active">
+      <a   [routerLink]="['/contact']" class="nav-link">
         <fa-icon [icon]="faEnvelope"></fa-icon> 
       </a>
     </li>
   </ul>
 </nav>
+
