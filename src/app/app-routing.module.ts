@@ -9,8 +9,8 @@ const routes: Routes = [
   { path: 'experience', loadChildren: () => import('./component/experience/Experience.module').then(m => m.ExperienceModule)},
   { path: 'contact', component: ContactComponent },
   { path: 'profil', component: ProfilComponent },
-  { path: 'accueil', component: AccueilComponent },
-  { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+  { path: '', component: AccueilComponent },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '**', redirectTo: '/accueil' }
 
 ];
