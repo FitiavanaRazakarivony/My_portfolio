@@ -19,6 +19,10 @@ const emailRoutes = require('./app/routes/emailRoutes.routes');
 // Utiliser les routes
 app.use('/api/email', emailRoutes);
 
+// Exemple de route API
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from Node.js!' });
+});
 // Route pour servir l'application Angular
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/projet/browser/index.html')); // Remplacez par le chemin correct
