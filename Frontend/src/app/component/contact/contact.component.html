@@ -1,0 +1,28 @@
+<div class="contenuContact" >
+  <app-imagenom></app-imagenom>
+  <div class="contact" data-aos="zoom-out-down" data-aos-duration="1300" data-aos-delay="200" data-aos-offset="200">
+    <h1 class="lexend-tera titre_contact">CONTACT</h1>
+    <form (ngSubmit)="sendEmail()" #emailForm="ngForm" class="mt-5">
+      <!-- Subject -->
+      <div class="mb-3">
+        <label for="subject" class="form-label label">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="Enter subject"
+               [(ngModel)]="emailData.subject" name="subject" required #subject="ngModel">
+        <div *ngIf="subject.invalid && subject.touched" class="text-danger">Subject is required.</div>
+      </div>
+  
+      <!-- Message Text Area -->
+      <div class="mb-3">
+        <label for="message" class="form-label label">Message</label>
+        <textarea class="form-control" id="message" rows="3"
+                  [(ngModel)]="emailData.text" name="text" required #text="ngModel"></textarea>
+        <div *ngIf="text.invalid && text.touched" class="text-danger">Message is required.</div>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary w-100 mt-3" [disabled]="emailForm.invalid || isLoading">Submit</button>
+    </form>
+  </div>
+
+  <app-navbar></app-navbar>
+</div>

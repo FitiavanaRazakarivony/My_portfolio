@@ -1,0 +1,21 @@
+.logo {
+  background-color: #ffc71f;
+  color: rgb(18, 18, 18);
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+}
+
+.icone {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  margin-top: auto; 
+  column-gap: 1rem;
+}
+

@@ -1,0 +1,20 @@
+<!-- <div class="flex-container ">
+  <div class="flex-item navbar-container bgcolor">
+    <app-navbar></app-navbar>
+  </div>
+
+  <div class="flex-item router-container content">
+  </div>
+</div> -->
+
+<div class="main-container">
+  <div class="content">
+    <app-loader></app-loader>
+    <app-cursor-tracker></app-cursor-tracker>
+
+    <router-outlet *ngIf="!isLoading"></router-outlet>
+  
+  </div>
+  <!-- <app-navbar></app-navbar> -->
+</div>
+

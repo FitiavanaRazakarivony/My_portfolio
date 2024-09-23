@@ -1,0 +1,17 @@
+.cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #27f90a 0%, rgba(87, 249, 69, 0.1) 50%, rgba(255, 255, 255, 0.1) 90%);
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.1s ease-out, box-shadow 0.2s ease-out;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.3); /* Ombre blanche douce */
+}
+  
+.cursor:hover {
+    transform: scale(1.2); /* Agrandissement au survol */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.4); /* Ombre augmentée au survol */
+}
+  
