@@ -2,6 +2,9 @@ import { Component,OnInit } from '@angular/core';
 import AOS from 'aos';
 import { faHome, faUser, faBriefcase, faEnvelope, faCode } from '@fortawesome/free-solid-svg-icons';
 import { ContactService } from './contact.service';
+import Swal from 'sweetalert2';
+import { LoaderService } from '../loader/loader.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +12,7 @@ import { ContactService } from './contact.service';
   styleUrl: './contact.component.css',
 })
 
-export class ContactComponent implements OnInit  {
+export class ContactComponent implements OnInit {
   isLoading: boolean = false;
 
   faHome = faHome;
@@ -30,20 +33,50 @@ export class ContactComponent implements OnInit  {
     text: ''
   };
 
-  constructor(private emailService: ContactService) {}
+  constructor(
+    private emailService: ContactService,
+  ) {}
 
   sendEmail() {
     this.isLoading = true; // Activer le loader avant l'envoi
     this.emailService.sendEmail(this.emailData).subscribe(
       response => {
-        this.isLoading = false;
-        this.message = 'Email envoyé avec succès !';
+        this.isLoading = false; // Désactiver le loader
+        this.valider();
       },
       error => {
         this.isLoading = false; // Désactiver le loader
-        this.message = 'Erreur lors de l\'envoi de l\'email.';
+        this.erreur();
       }
     );
   }
+  valider(){
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Email envoyé avec succès !"
+    })
+  }
+
+  erreur(){
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 3000,
+    });
+    Toast.fire({
+      icon: "error",
+      title: "Erreur lors de l\'envoi de l\'email."
+    })
+  }
+
+  
 }
+
 

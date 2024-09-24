@@ -17,4 +17,8 @@ export class LoaderService {
     console.log('Loader hidden');
     this.loadingSubject.next(false);
   }
+
+  setLoading(isLoading: boolean) {
+    this.loadingSubject.next(isLoading);
+  }
 }

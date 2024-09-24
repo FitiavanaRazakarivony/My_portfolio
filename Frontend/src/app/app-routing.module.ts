@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, },
   { path: 'profil', component: ProfilComponent,  },
   // { path: '', component: AccueilComponent, canActivate: [LoadingGuard]  },
-  { path: '', component: AccueilComponent  },
+  { path: '', component: AccueilComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '**', redirectTo: '/accueil' }
 

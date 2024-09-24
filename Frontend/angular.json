@@ -34,7 +34,8 @@
               "node_modules/aos/dist/aos.js"
             ],
             "allowedCommonJsDependencies": [
-              "aos"
+              "aos",
+              "sweetalert2"
             ]
           },
           "configurations": {
@@ -42,8 +43,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "800kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1.5mb"
                 },
                 {
                   "type": "anyComponentStyle",

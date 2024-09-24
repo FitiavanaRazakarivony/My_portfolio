@@ -9,7 +9,7 @@ import { LoaderService } from './loader.service';
 export class LoaderComponent {
   isLoading: boolean = false;
 
-  constructor(private loaderService: LoaderService) {
+  constructor(public loaderService: LoaderService) {
     this.loaderService.isLoading$.subscribe(loading => {
       this.isLoading = loading;
       console.log('Loader state:', this.isLoading);    });
