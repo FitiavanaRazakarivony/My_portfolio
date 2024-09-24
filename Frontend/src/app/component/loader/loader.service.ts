@@ -9,12 +9,10 @@ export class LoaderService {
   isLoading$ = this.loadingSubject.asObservable();
 
   showLoader() {
-    console.log('Loader shown');
     this.loadingSubject.next(true);
   }
 
   hideLoader() {
-    console.log('Loader hidden');
     this.loadingSubject.next(false);
   }
 
