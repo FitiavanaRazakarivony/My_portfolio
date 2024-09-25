@@ -64,3 +64,13 @@
     align-content: center;
     justify-content: center;
   }
+  select {
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  

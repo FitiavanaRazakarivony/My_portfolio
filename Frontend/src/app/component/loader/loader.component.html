@@ -2,26 +2,17 @@
 
 <div *ngIf="isLoading" class="loader">
 <!-- Ton loader ici, par exemple une animation CSS ou un spinner -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="75" height="75">
-    <circle fill="#27F90A" stroke="#27F90A" stroke-width="3" r="10" cx="25" cy="75">
-      <animate attributeName="cx" calcMode="spline" dur="2" values="25;125;125;25;25" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin="0"></animate>
-    </circle>
-    <circle fill="#27F90A" stroke="#27F90A" stroke-width="3" opacity=".8" r="10" cx="25" cy="75">
-      <animate attributeName="cx" calcMode="spline" dur="2" values="25;125;125;25;25" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin="0.05"></animate>
-    </circle>
-    <circle fill="#27F90A" stroke="#27F90A" stroke-width="3" opacity=".6" r="10" cx="25" cy="75">
-      <animate attributeName="cx" calcMode="spline" dur="2" values="25;125;125;25;25" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".1"></animate>
-    </circle>
-    <circle fill="#27F90A" stroke="#27F90A" stroke-width="3" opacity=".4" r="10" cx="25" cy="75">
-      <animate attributeName="cx" calcMode="spline" dur="2" values="25;125;125;25;25" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".15"></animate>
-    </circle>
-    <circle fill="#27F90A" stroke="#27F90A" stroke-width="3" opacity=".2" r="10" cx="25" cy="75">
-      <animate attributeName="cx" calcMode="spline" dur="2" values="25;125;125;25;25" keySplines="0 .1 .5 1;0 .1 .5 1;0 .1 .5 1;0 .1 .5 1" repeatCount="indefinite" begin=".2"></animate>
-    </circle>
-  </svg>
-  <div>
-      <h2 class="pacifico-regular" style="display: block; text-align: center; margin-top: 10px;">Fitiavana . . .</h2>
-  </div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="75" height="75">
+  <circle fill="#27f90a" stroke="#27f90a" stroke-width="15" r="15" cx="40" cy="100">
+    <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate>
+  </circle>
+  <circle fill="#27f90a" stroke="#27f90a" stroke-width="15" r="15" cx="100" cy="100">
+    <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate>
+  </circle>
+  <circle fill="#27f90a" stroke="#27f90a" stroke-width="15" r="15" cx="160" cy="100">
+    <animate attributeName="opacity" calcMode="spline" dur="2" values="1;0;1;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate>
+  </circle>
+</svg>
 
 </div>
   

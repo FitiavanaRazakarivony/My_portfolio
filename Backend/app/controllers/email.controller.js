@@ -12,11 +12,13 @@ exports.sendEmail = (req, res) => {
   });
 
   let mailOptions = {
-    from: 'razakarivonyfinoanafeno@gmail.com',
+    from: '',
     to: to,
     subject: subject,
     text: text
   };
+
+  console.log('mail', mailOptions)
 
   transporter.sendMail(mailOptions, (err, info) => {
     if (err) {
@@ -25,3 +27,4 @@ exports.sendEmail = (req, res) => {
     res.status(200).json({ message: 'E-mail envoyé avec succès', info });
   });
 };
+

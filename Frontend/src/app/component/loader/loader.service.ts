@@ -15,8 +15,4 @@ export class LoaderService {
   hideLoader() {
     this.loadingSubject.next(false);
   }
-
-  setLoading(isLoading: boolean) {
-    this.loadingSubject.next(isLoading);
-  }
 }
