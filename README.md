@@ -19,7 +19,8 @@ I'm a **Web Developer** with a passion for creating efficient and user-friendly 
 
 Feel free to reach out for collaborations or inquiries:
 
-- **Email:** [fitiavanarazakarivony00@gmail.com](mailto:fitiavanarazakarivony00@gmail.com)
+- **Email:** [fitiavanarazakarivony00@gmail.com](mailto:fitiavanarazakarivony@gmail.com)
 - **LinkedIn:** [Your LinkedIn Profile](link-to-your-linkedin)
-
+- **my portfolio**: [My Portfolio](https://fitiavanarazakarivony.vercel.app/experience)
+  
 Thank you for visiting my portfolio!
