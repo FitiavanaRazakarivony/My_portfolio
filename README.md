@@ -20,7 +20,7 @@ I'm a **Web Developer** with a passion for creating efficient and user-friendly 
 Feel free to reach out for collaborations or inquiries:
 
 - **Email:** [razakarivonyfinoanafeno@gmail.com](mailto:razakarivonyfinoanafeno@gmail.com)
-- **LinkedIn:** [Your LinkedIn Profile](link-to-your-linkedin)
+- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/finoana-feno-fitiavana-razakarivony-45b513263/)
 - **my portfolio**: [My Portfolio](https://fitiavanarazakarivony.vercel.app/experience)
   
 Thank you for visiting my portfolio!
