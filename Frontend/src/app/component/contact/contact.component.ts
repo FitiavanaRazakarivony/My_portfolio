@@ -65,33 +65,37 @@ export class ContactComponent implements OnInit {
       }
     );
   }
-  valider(){
+  valider() {
     const Toast = Swal.mixin({
       toast: true,
       position: "bottom-end",
       showConfirmButton: false,
       timer: 2000,
+      customClass: {
+        title: 'custom-toast' // Appliquer la classe ici
+      }
     });
     Toast.fire({
       icon: "success",
       title: "Email envoyé avec succès !"
-    })
+    });
   }
-
-  erreur(){
+  
+  erreur() {
     const Toast = Swal.mixin({
       toast: true,
       position: "bottom-end",
       showConfirmButton: false,
       timer: 3000,
+      customClass: {
+        title: 'custom-toast' // Appliquer la classe ici
+      }
     });
     Toast.fire({
       icon: "error",
-      title: "Erreur lors de l\'envoi de l\'email."
-    })
-  }
-
-  
+      title: "Erreur"
+    });
+  }  
 }
 
 

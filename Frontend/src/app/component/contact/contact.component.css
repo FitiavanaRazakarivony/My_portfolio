@@ -58,7 +58,7 @@
   }
   
   .titre_contact{
-    font-size: 5.8rem;
+    font-size: 5.8rem !important;
     position: relative;
     display: flex;
     align-content: center;
@@ -73,4 +73,6 @@
     margin-top: 10px;
     font-weight: bold;
   }
-  
+  .custom-toast {
+    font-size: 16px;
+  }

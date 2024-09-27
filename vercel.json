@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Frontend/dist/projet/browser/package.json",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "Backend/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/Backend/server.js" },
+    { "src": "/(.*)", "dest": "/Frontend/dist/projet/browser/$1" }
+  ]
+}

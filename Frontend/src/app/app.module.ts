@@ -13,7 +13,6 @@ import { FormsModule } from '@angular/forms';
 import { LoaderComponent } from './component/loader/loader.component';
 import { CursorTrackerComponent } from './cursor-tracker/cursor-tracker.component';
 
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -21,7 +20,9 @@ import { CursorTrackerComponent } from './cursor-tracker/cursor-tracker.componen
     HttpClientModule,
     CommonModule,
     SharedModule,
-    FormsModule
+    FormsModule,
+    
+
   ],
   declarations: [
     AppComponent,

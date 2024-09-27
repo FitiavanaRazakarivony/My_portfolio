@@ -5,7 +5,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
-
+.nom_prenom{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
 .nom {
   color: #27f90a;
 }
@@ -60,7 +65,7 @@
 .icone{
   display: flex;
   flex-direction: column;
-  row-gap: .8rem;
+  row-gap: 1rem;
   align-items: center;
   width: 1.6rem;
 

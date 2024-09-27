@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Middleware pour servir des fichiers statiques (exemple Angular)
-app.use(express.static(path.join(__dirname, 'dist/projet')));
+app.use(express.static(path.join(__dirname, '../Frontend/dist/projet/browser')));
 
 // Importer les routes
 const emailRoutes = require('./app/routes/emailRoutes.routes');
@@ -33,7 +33,7 @@ app.get('/api/hello', (req, res) => {
 
 // Route pour servir l'application Angular
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/projet/browser/index.html')); // Remplacez par le chemin correct
+  res.sendFile(path.join(__dirname, '../Frontend/dist/projet/browser/index.html')); // Remplacez par le chemin correct
 });
 
 // Démarrer le serveur

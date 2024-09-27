@@ -18,7 +18,7 @@
   margin: 0;
   align-items: center;
   /* border-left: 1px solid; */
-  row-gap: 0.2rem;
+  row-gap: 1.2rem;
 }
 
 .menu a {
@@ -28,13 +28,13 @@
 }
 
 .active {
-  border-left: 2px solid #42ec09;
+  border-left: 3px solid #42ec09;
   padding: 0.8rem;
   border-radius: 26%;
 }
 
 .nav-link:hover{
-  border-left: 2px solid #42ec09;
+  border-left: 3px solid #42ec09;
   padding: 0.8rem;
   border-radius: 26%;
   transition: 0.5s;

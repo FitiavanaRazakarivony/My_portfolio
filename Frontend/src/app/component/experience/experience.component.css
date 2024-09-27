@@ -1,6 +1,9 @@
 h5{
   margin-left: 1rem;
 }
+h4{
+  font-size: 1.5rem !important;
+}
 .contact {
   display: flex;
   flex-direction: column;
@@ -68,5 +71,6 @@ h5{
   font-size: 15px;
 }
 .titre_experience{
-  font-size: 5.8rem;
+  margin-top: 2rem;
+  font-size: 5.8rem !important;
 }

@@ -1,4 +1,22 @@
 
+h1{
+  font-size: 3rem !important;
+}
+h2{
+  font-size: 4rem !important;
+}
+h3{
+  font-size: 2rem !important;
+}
+h4{
+  font-size: 2rem !important;
+}
+h5{
+  font-size: 1.2rem !important;
+}
+h6{
+  font-size: 15.6px !important;
+}
   /* You can add global styles to this file, and also import other style files */
   body{
       color: rgb(55, 53, 53);
@@ -17,7 +35,7 @@
   }
 
   .lexend-tera {
-    font-family: "Lexend Tera", sans-serif;
+    font-family: "Lexend Tera", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -43,14 +61,14 @@
   }
 
   .permanent-marker-regular {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Permanent Marker", cursive !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
   }
 
   /* fin fonts */
   *{
-      font-family: Arial;
+      font-family: Arial !important;
       margin: 0;
       padding: 0;
 
@@ -100,3 +118,5 @@
     background-color: #ffffff; /* Couleur de fond pour le contenu */
   }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
