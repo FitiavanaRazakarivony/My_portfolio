@@ -1,0 +1,7 @@
+# Angular build output
+/dist
+/build
+
+# Logs
+logs
+*.log
