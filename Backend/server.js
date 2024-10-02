@@ -5,14 +5,14 @@ const path = require('path');
 
 // Créer l'application Express
 const app = express();
-
 // Middleware CORS pour autoriser uniquement une origine spécifique
 const corsOptions = {
-  origin: ['https://fitiavanarazakarivony.vercel.app'], // URL de votre application déployée
+  origin: ['http://localhost:4200'], // URL de votre application déployée
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization'
 };
 app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 // Middleware pour parser le JSON envoyé dans les requêtes
 app.use(bodyParser.json());
@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 // Middleware pour servir des fichiers statiques (exemple Angular)
 app.use(express.static(path.join(__dirname, '../Frontend/dist/projet/browser')));
 
-// Importer les routes
-const emailRoutes = require('./app/routes/emailRoutes.routes');
+// Importer les app.use
+const emailRoutes = require('../Backend/src/app/routes/emailRoutes.routes');
 
 // Utiliser les routes pour l'API email
 app.use('/api/email', emailRoutes);

@@ -1,16 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-  private apiUrl = 'http://localhost:3000/api/email';
+  private apiUrl = 'http://localhost:8080/api/email/send'; // URL de l'API
 
   constructor(private http: HttpClient) { }
 
+  // Méthode pour envoyer l'email
   sendEmail(emailData: { to: string; subject: string; text: string }): Observable<any> {
-    return this.http.post(`${this.apiUrl}/send`, emailData);
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    // Envoi de la requête POST avec les données d'email
+    return this.http.post(this.apiUrl, emailData, { headers });
   }
 }

@@ -19,7 +19,6 @@ export class ContactComponent implements OnInit {
   onOptionChange(event: Event) {
     const selectElement = event.target as HTMLSelectElement;
     this.selectedOption = selectElement.value;
-    console.log('Option sélectionnée:', this.selectedOption);
   }
 
   isLoading: boolean = false;
@@ -58,6 +57,8 @@ export class ContactComponent implements OnInit {
         this.valider();
       },
       error => {
+        console.log('erreur', error);
+        
         // this.isLoading = false; // Désactiver le loader
         this.loaderService.hideLoader()
 
