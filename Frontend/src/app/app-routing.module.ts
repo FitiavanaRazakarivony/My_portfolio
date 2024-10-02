@@ -8,8 +8,8 @@ import { LoadingGuard } from './loading.guard';
 
 const routes: Routes = [
   { path: 'experience', loadChildren: () => import('./component/experience/Experience.module').then(m => m.ExperienceModule)},
-  { path: 'contact', component: ContactComponent, },
-  { path: 'profil', component: ProfilComponent,  },
+  { path: 'contact', loadChildren: () => import('./component/contact/contact.module').then(m => m.ContactModule) },
+  { path: 'profil', loadChildren: () => import('./component/profil/profil.module').then(m => m.ProfilModule)  },
   // { path: '', component: AccueilComponent, canActivate: [LoadingGuard]  },
   { path: '', component: AccueilComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },

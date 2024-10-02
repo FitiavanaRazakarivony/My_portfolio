@@ -19,7 +19,6 @@ import {MatButtonModule} from '@angular/material/button';
     SharedModule,
     MatTooltipModule,
     MatButtonModule
-
   ],
 
 })

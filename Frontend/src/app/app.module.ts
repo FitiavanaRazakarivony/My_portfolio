@@ -21,14 +21,11 @@ import { CursorTrackerComponent } from './cursor-tracker/cursor-tracker.componen
     CommonModule,
     SharedModule,
     FormsModule,
-    
-
+  
   ],
   declarations: [
     AppComponent,
     AccueilComponent,
-    ContactComponent,
-    ProfilComponent,    
     LoaderComponent,
     CursorTrackerComponent
   

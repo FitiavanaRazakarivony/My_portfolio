@@ -3,27 +3,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../../shared.module';
-import { ContactComponent } from './contact.component';
-import { ContactRoutingModule } from './contact-routing.module';
+import { ProfilComponent } from './profil.component';
+import { ExperienceRoutingModule } from '../experience/experience-routing.module';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { ProfilRoutingModule } from './profil-routing.module';
 
 
 @NgModule({
   declarations: [
-    ContactComponent
+    ProfilComponent
   ],
   imports: [
     CommonModule,
-    ContactRoutingModule,
+    ProfilRoutingModule,
     FontAwesomeModule,
-    SharedModule,
+    SharedModule,   
     MatTooltipModule,
-    MatButtonModule,
-    FormsModule,    
+    MatButtonModule
   ],
   exports: [
   ],
 })
-export class ContactModule { }
+export class ProfilModule { }
