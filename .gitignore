@@ -1,7 +1,15 @@
-# Angular build output
-/dist
-/build
+# Exclure node_modules
+node_modules/
 
-# Logs
-logs
+# Exclure les fichiers de build Angular (ou autres frameworks front-end)
+dist/
+build/
+
+# Exclure les fichiers de logs
+logs/
 *.log
+
+# Exclure les fichiers temporaires
+tmp/
+.temp/
+.DS_Store
