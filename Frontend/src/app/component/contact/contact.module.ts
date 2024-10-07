@@ -5,8 +5,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../../shared.module';
 import { ContactComponent } from './contact.component';
 import { ContactRoutingModule } from './contact-routing.module';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 
 
@@ -19,8 +17,6 @@ import { FormsModule } from '@angular/forms';
     ContactRoutingModule,
     FontAwesomeModule,
     SharedModule,
-    MatTooltipModule,
-    MatButtonModule,
     FormsModule,    
   ],
   exports: [

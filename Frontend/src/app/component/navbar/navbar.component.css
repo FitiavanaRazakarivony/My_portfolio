@@ -42,3 +42,21 @@
 .nav-link{
   transition: 0.5s;
 }
+
+@media (min-width: 768px) {
+  *{
+    display: flex;
+  }
+  .navbar {
+     /* Texte plus grand sur tablette */
+     display: flex;
+     flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    /* Texte encore plus grand sur ordinateur */
+    display: flex;
+  }
+}

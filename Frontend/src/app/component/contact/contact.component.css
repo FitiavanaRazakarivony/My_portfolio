@@ -36,10 +36,6 @@
     flex-wrap: wrap;
   }
 
-  .image{
-    width: 100%
-  }
-
   .label{
     font-size: 2rem;
   }
@@ -58,7 +54,7 @@
   }
   
   .titre_contact{
-    font-size: 5.8rem !important;
+    font-size: 5.5rem !important;
     position: relative;
     display: flex;
     align-content: center;

@@ -5,8 +5,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SharedModule } from '../../shared.module';
 import { ProfilComponent } from './profil.component';
 import { ExperienceRoutingModule } from '../experience/experience-routing.module';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatButtonModule } from '@angular/material/button';
 import { ProfilRoutingModule } from './profil-routing.module';
 
 
@@ -19,8 +17,6 @@ import { ProfilRoutingModule } from './profil-routing.module';
     ProfilRoutingModule,
     FontAwesomeModule,
     SharedModule,   
-    MatTooltipModule,
-    MatButtonModule
   ],
   exports: [
   ],

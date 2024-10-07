@@ -12,21 +12,19 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-          "options": {      
+          "options": {
             "outputPath": "dist/projet",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "aot": true,
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/logo.ico",
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/aos/dist/aos.css",
               "src/styles.css"
@@ -44,9 +42,9 @@
             "production": {
               "budgets": [
                 {
-                  "type": "bundle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "type": "initial",
+                  "maximumWarning": "775.38kb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -76,7 +74,6 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "proxyConfig": "src/proxy.conf.json", 
               "buildTarget": "projet:build:production"
             },
             "development": {
@@ -100,11 +97,10 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/logo.ico",
               "src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []

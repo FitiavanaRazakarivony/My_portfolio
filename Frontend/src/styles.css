@@ -1,4 +1,4 @@
-
+/* 
 h1{
   font-size: 3rem !important;
 }
@@ -16,7 +16,7 @@ h5{
 }
 h6{
   font-size: 15.6px !important;
-}
+} */
   /* You can add global styles to this file, and also import other style files */
   body{
       color: rgb(55, 53, 53);
@@ -33,7 +33,10 @@ h6{
     'opsz' 50;
     color:#75FB4C
   }
-
+  .image{
+    width: 104%
+  }
+  
   .lexend-tera {
     font-family: "Lexend Tera", sans-serif !important;
     font-optical-sizing: auto;

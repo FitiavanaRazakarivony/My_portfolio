@@ -44,9 +44,6 @@ h4{
 .boutton{
   float: right;
 }
-.image{
-  width: 100%
-}
 
 .projet{
   display: flex;
@@ -71,6 +68,15 @@ h4{
   font-size: 15px;
 }
 .titre_experience{
-  margin-top: 2rem;
-  font-size: 5.8rem !important;
+  font-size: 5rem !important;
+}
+
+@media (min-width: 768px) {
+  *{
+    display: flex;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+  }
 }
